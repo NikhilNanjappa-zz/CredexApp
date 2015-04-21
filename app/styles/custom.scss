@@ -1,0 +1,54 @@
+/* Variables */
+$light_blue: #2d80c2;
+$white: white;
+$gray: gray;
+
+/* Overriding bootstrap classes */
+.container-fluid {
+	padding: 0;
+	.jumbotron {
+		border-radius: 0px;
+	}
+}
+
+.jumbotron {
+	background-color: $light_blue;
+	color: $white;
+	padding: 20px 90px;
+	margin-bottom: 0;
+	p {
+		font-size: 17px;
+		font-weight: 300;
+		text-align: left;
+	}
+	h1 {
+		margin-top: 10px;
+		margin-bottom: 30px;
+		font-size: 43px;
+		font-weight: 400;
+	}
+}
+
+footer .container {
+	text-align: center;
+}
+
+/* Custom classes */
+#profile_img {
+	margin-top: 20px;
+	width: 176px;
+}
+
+.marketing p {
+	color: $gray;
+}
+
+/* Media Queries for small devices */
+@media screen and(max-width: 769px) {
+	.contact_content {
+		text-align: center;
+	}
+	.jumbotron h1 {
+		font-size: 31px;
+	}
+}
