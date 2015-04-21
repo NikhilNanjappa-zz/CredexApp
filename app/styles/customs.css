@@ -1,0 +1,46 @@
+.main_container {
+	padding: 0;
+}
+
+.container-fluid .jumbotron {
+	background-color: #2d80c2;
+	color: white;
+	border-radius: 0px;
+	padding: 20px 90px 20px 90px;
+	margin-bottom: 0px;
+}
+
+.jumbotron p {
+	font-size: 17px;
+	font-weight: 300;
+	text-align: left;
+}
+
+.jumbotron h1 {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 43px;
+	font-weight: 400;
+}
+
+#profile_img {
+	margin-top: 20px;
+	width: 176px;
+}
+
+.marketing p {
+	color: gray;
+}
+
+footer .container {
+	text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+  .contact_content {
+    text-align: center;
+  }
+  .jumbotron h1 {
+    font-size: 31px;
+  }
+}

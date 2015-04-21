@@ -1,0 +1,85 @@
+
+<!-- Header Jumbotron -->
+<div class="jumbotron">
+  <h1>Dr. Per Rosen</h1>
+  <p class="lead">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut odio nibh. Phasellus facilisis quam vitae purus tempus, sed tempor ante ultrices. Nunc vel est vitae velit eleifend pellentesque. Donec libero risus, scelerisque sit amet gravida ut, molestie sed tortor. Ut a semper velit, sit amet vulputate lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ullamcorper augue at dui efficitur luctus.
+  </p>
+</div>
+
+<!-- Profile Content Container -->
+<div class="container">
+  <!-- Contact Container -->
+  <div class="row marketing">
+    <div class="col-lg-6 col-sm-6 contact_content">
+      <img src="../images/pic.jpeg" id="profile_img">
+    </div>
+    <div class="col-lg-6 col-sm-6 contact_content">
+      <h3>Contact</h3>
+      <br/>
+      <p>113 Temporary Street Something NSW 2095</p>
+      <p>(03) 9356 9133</p>
+      <p>name@doctorprofile.com</p>
+      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Contact <i class="glyphicon glyphicon-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <!-- Focus1 Container -->
+  <div class="row marketing">
+    <div class="col-lg-12">
+      <h3>Focus 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut odio nibh. Phasellus facilisis quam vitae purus tempus, sed tempor ante ultrices. Nunc vel est vitae velit eleifend pellentesque. Donec libero risus, scelerisque sit amet gravida ut, molestie sed tortor. Ut a semper velit, sit amet vulputate lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ullamcorper augue at dui efficitur luctus.</p>
+      <button type="button" class="btn btn-warning">Read More <i class="glyphicon glyphicon-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <!-- Focus2 Container -->
+  <div class="row marketing">
+    <div class="col-lg-12">
+      <h3>Focus 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut odio nibh. Phasellus facilisis quam vitae purus tempus, sed tempor ante ultrices. Nunc vel est vitae velit eleifend pellentesque. Donec libero risus, scelerisque sit amet gravida ut, molestie sed tortor. Ut a semper velit, sit amet vulputate lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ullamcorper augue at dui efficitur luctus.</p>
+      <button type="button" class="btn btn-warning">Read More <i class="glyphicon glyphicon-chevron-right"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT MODAL -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Contact</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <!-- Contact Name -->
+          <div class="form-group">
+            <label for="employee_id">Name</label>
+            <input class="form-control" id="employee_id" placeholder="Enter your name">
+          </div>
+          <!-- Contact Email -->
+          <div class="form-group">
+            <label for="employee_name">Email</label>
+            <input class="form-control" id="employee_name" placeholder="Enter your email">
+          </div>
+          <!-- Contact Subject -->
+          <div class="form-group">
+            <label for="employee_email">Subject</label>
+            <input type="email" class="form-control" id="employee_email" placeholder="Enter your subject">
+          </div>
+          <!-- Contact Comments -->
+          <div class="form-group">
+            <label for="employee_phone">Comments</label>
+            <textarea class="form-control" rows="5" cols="70" placeholder="Enter comments"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">OK</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
