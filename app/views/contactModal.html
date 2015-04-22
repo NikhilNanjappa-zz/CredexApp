@@ -1,0 +1,32 @@
+<!-- MODAL TEMPLATE -->
+<div class="modal-header">
+  <h3 class="modal-title">Contact</h3>
+</div>
+<div class="modal-body">
+  <form role="form">
+    <!-- Contact Name -->
+    <div class="form-group">
+      <label for="employee_id">Name</label>
+      <input class="form-control" id="employee_id" placeholder="Enter your name">
+    </div>
+    <!-- Contact Email -->
+    <div class="form-group">
+      <label for="employee_name">Email</label>
+      <input class="form-control" id="employee_name" placeholder="Enter your email">
+    </div>
+    <!-- Contact Subject -->
+    <div class="form-group">
+      <label for="employee_email">Subject</label>
+      <input type="email" class="form-control" id="employee_email" placeholder="Enter your subject">
+    </div>
+    <!-- Contact Comments -->
+    <div class="form-group">
+      <label for="employee_phone">Comments</label>
+      <textarea class="form-control" rows="5" cols="70" placeholder="Enter comments"></textarea>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" ng-click="ok()">OK</button>
+  <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>
