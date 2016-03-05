@@ -7,24 +7,24 @@
  * # MainCtrl
  * Controller of the panthaProfileApp
  */
-angular.module('panthaProfileApp')
-  .controller('MainCtrl', function ($scope, $modal) {
+angular.module('credexApp')
+  .controller('MainCtrl', function ($scope, $http) {
 
-  // fires on click of contact button
-  $scope.contact = function () {
-    $modal.open({
-      templateUrl: 'views/contactModal.html',
-      controller: function ($scope, $modalInstance) {
+  $http.get('/scripts/tweet.json').then(function(response) {
+    $scope.tweets = response.data.tweets;
+  });
 
-			  $scope.ok = function () {
-			    $modalInstance.dismiss('cancel');
-			  };
-
-			  $scope.cancel = function () {
-			    $modalInstance.dismiss('cancel');
-			  };
-      }
-    });
-  };
+  $(document).on("click", ".reverse-button", function(e) {
+    var prev_text = $( this ).next().text();
+    var reverse_text = prev_text.split('').reverse().join(''); //logic to reverse the text
+    $(this).next().text(reverse_text); //replace the text with the reversed text
+    
+    // Just to toggle the text of the button
+    if($(this).text() !== "Normal Tweet") { 
+      $(this).text("Normal Tweet"); 
+    } else { 
+      $(this).text("Reverse Tweet"); 
+    }
+  });
 
 });

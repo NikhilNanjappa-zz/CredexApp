@@ -1,0 +1,51 @@
+{
+  "headers": {
+    "status": 200,
+    "xPolling": 30,
+    "time": 1431449793
+  },
+  "tweets": [
+    {
+      "retweet": false,
+      "id": "598156558984290304",
+      "html": "<a href=\"https://twitter.com/kasiakatie\" class=\"PrettyLink profile customisable h-card\" dir=\"ltr\" data-scribe=\"element:mention\">@<b class=\"p-nickname\">kasiakatie</b></a> An unusual choice for breakfast, but we're glad that you enjoyed it :-)",
+      "text": "@kasiakatie An unusual choice for breakfast, but we're glad that you enjoyed it :-)",
+      "author": {
+        "url": "https://twitter.com/_PleaseBugMeNot",
+        "avatar": "https://pbs.twimg.com/media/CctQ2dkWIAAWpvl.jpg",
+        "fullName": "Dominic Bart",
+        "nickName": "@higgidy"
+      },
+      "updated": "53m",
+      "permalink": "nikhilnanjappa.github.io"
+    },
+    {
+      "retweet": false,
+      "id": "598130095232913408",
+      "html": "Mmm, good choice <a href=\"https://twitter.com/Mmelulu\" class=\"PrettyLink profile customisable h-card\" dir=\"ltr\" data-scribe=\"element:mention\">@<b class=\"p-nickname\">Mmelulu</b></a>",
+      "text": "Mmm, good choice @Mmelulu",
+      "author": {
+        "url": "https://twitter.com/_PleaseBugMeNot",
+        "avatar": "https://pbs.twimg.com/media/Ccn_MOZW8AAB_JC.jpg",
+        "fullName": "Chris Harry",
+        "nickName": "@higgidy"
+      },
+      "updated": "2h",
+      "permalink": "nikhilnanjappa.github.io"
+    },
+    {
+      "retweet": false,
+      "id": "598125208021635072",
+      "html": "During the <a href=\"https://twitter.com/artistshouses\" class=\"PrettyLink profile customisable h-card\" dir=\"ltr\" data-scribe=\"element:mention\">@<b class=\"p-nickname\">artistshouses</b></a> you can wander into random people's houses (including Abby &amp; Cedar's) and not get told off <a href=\"http://t.co/mSA5CV480n\" class=\"PrettyLink link media customisable\" data-pre-embedded=\"true\" dir=\"ltr\" data-scribe=\"\">pic.twitter.com/mSA5CV480n</a>",
+      "text": "During the @artistshouses you can wander into random people's houses (including Abby & Cedar's) and not get told off",
+      "author": {
+        "url": "https://twitter.com/_PleaseBugMeNot",
+        "avatar": "https://pbs.twimg.com/profile_images/701965669085134849/18sulDIR_bigger.jpg",
+        "fullName": "Alisha Keys",
+        "nickName": "@higgidy"
+      },
+      "updated": "2h",
+      "permalink": "nikhilnanjappa.github.io"
+    }
+  ]
+}

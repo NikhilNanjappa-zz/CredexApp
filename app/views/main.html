@@ -1,44 +1,14 @@
+<h3 class="text-center">Toggle the 'Reverse Tweet' button to reverse only that respective text <hr></h3>
 
-<!-- Header Jumbotron -->
-<div class="jumbotron">
-  <h1>Dr. Per Rosen</h1>
-  <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut odio nibh. Phasellus facilisis quam vitae purus tempus, sed tempor ante ultrices. Nunc vel est vitae velit eleifend pellentesque. Donec libero risus, scelerisque sit amet gravida ut, molestie sed tortor. Ut a semper velit, sit amet vulputate lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ullamcorper augue at dui efficitur luctus.
-  </p>
-</div>
-
-<!-- Profile Content Container -->
-<div class="container">
-  <!-- Contact Container -->
-  <div class="row marketing">
-    <div class="col-lg-6 col-sm-6 contact_content">
-      <img src="../images/pic.jpeg" id="profile_img">
-    </div>
-    <div class="col-lg-6 col-sm-6 contact_content">
-      <h3>Contact</h3>
-      <br/>
-      <p>113 Temporary Street Something NSW 2095</p>
-      <p>(03) 9356 9133</p>
-      <p>name@doctorprofile.com</p>
-      <button type="button" class="btn btn-warning" ng-click="contact()">Contact <i class="glyphicon glyphicon-chevron-right"></i></button>
-    </div>
-  </div>
-
-  <!-- Focus1 Container -->
-  <div class="row marketing">
-    <div class="col-lg-12">
-      <h3>Focus 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut odio nibh. Phasellus facilisis quam vitae purus tempus, sed tempor ante ultrices. Nunc vel est vitae velit eleifend pellentesque. Donec libero risus, scelerisque sit amet gravida ut, molestie sed tortor. Ut a semper velit, sit amet vulputate lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ullamcorper augue at dui efficitur luctus.</p>
-      <button type="button" class="btn btn-warning">Read More <i class="glyphicon glyphicon-chevron-right"></i></button>
-    </div>
-  </div>
-
-  <!-- Focus2 Container -->
-  <div class="row marketing">
-    <div class="col-lg-12">
-      <h3>Focus 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut odio nibh. Phasellus facilisis quam vitae purus tempus, sed tempor ante ultrices. Nunc vel est vitae velit eleifend pellentesque. Donec libero risus, scelerisque sit amet gravida ut, molestie sed tortor. Ut a semper velit, sit amet vulputate lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ullamcorper augue at dui efficitur luctus.</p>
-      <button type="button" class="btn btn-warning">Read More <i class="glyphicon glyphicon-chevron-right"></i></button>
+<div class="row">
+  <div class="tweet col-md-6 col-sm-6 col-xs-12" ng-repeat="tweet in tweets">
+    <div class="tweetCard">
+      <img ng-src="{{ tweet.author.avatar }}" />
+      <h1>{{ tweet.author.fullName }}</h1>
+      <a class="follow" href="{{ tweet.author.url }}">Follow Me</a>
+      <a class="follow reverse-button" >Reverse Tweet</a>
+      <p class="text-to-reverse">{{ tweet.text }}</p>
+      <a href="http://{{ tweet.permalink }}" target="_blank">{{ tweet.permalink }}</a>
     </div>
   </div>
 </div>
